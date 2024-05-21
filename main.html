@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Online Computer Equipment Store</title>
+    <link rel="stylesheet" type="text/css" href="theme1.css" id="theme1">
+    <link rel="stylesheet" type="text/css" href="theme2.css" disabled id="theme2">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<header style= "background-color: transparent;" > 
+    <div id="topLeft">
+        <img src="pictures/logo.img.jpeg" alt="Logo" id="logo" style="position: absolute; top: 10px; left: 10px;"> 
+        <button id="themeButton" onclick="switchTheme()" style="position: absolute; top: 70px; left: 0;">Switch Theme</button> 
+        <input type="text" id="searchBar" style="position: absolute; top: 0; right: 0;"placeholder="Search here...">
+        <button id="searchButton" onclick="search()" style="position: absolute; top: 50px; right: 10px;">Search</button>
+    </div>
+    
+
+    <h1>Shmebulock's shop </style></h1>
+    <nav>
+        <ul id="globalMenu">
+            <li><a href="#section1">Today's Offers</a></li>
+            <li><a href="#section2">Shopping</a></li>
+            <li><a href="#section3">Stock Gallery</a></li>
+        </ul>
+    </nav>
+</header>
+<body > 
+    
+    <main>
+        <section id="section1">
+            <h2>Today's Offers</h2>
+            <p id="navInfo"> Here, you'll find deals so hot, they make the Sahara look like a snow globe. We've got discounts deeper than the Mariana Trench and bargains brighter than a supernova. From the latest tech gadgets that would make even a cyborg jealous, to computer parts that are approved by Elon Musk. So, buckle up, because these offers are zooming away faster than a rocket to Mars!"</p>
+            <p>all the items you see here are in stock and available for a limited time </p>
+            
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td><img src="pictures/dragonchair.img.jpeg" width="200" height="200" alt="Computeraprt"> Dragon Chair</td> 
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td class="product-cell"><img src="pictures/kalpasephone.img.jpeg"width="200" height="200"  alt="Computeraprt"> ChamPhones</td> 
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td><img src="pictures/keylion.img.jpeg"width="200" height="200"  alt="Computeraprt"> Keylion</td> 
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td><img src="pictures/mouse.img.jpeg" width="200" height="200" alt="Computeraprt"> Mouat</td> 
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td><img src="pictures/QuantomDVD.jpeg"width="200" height="200"  alt="Computeraprt"> Quantom DVD Ram</td> 
+                    <td>$5000</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="section2">
+            <h2>Shopping</h2>
+            <p id="navInfo">This is where you can Brows and find other items available to buy </p>
+            <p>Here, you’ll find keyboards that dance under your fingertips, whispering tales of epic coding battles in soft, clickety whispers. Mice that scurry across your desk with the agility of an Olympic sprinter, eager to leap into action at your command.
+
+                Monitors that offer windows into other dimensions, with colors so vibrant, you’ll need sunglasses to handle the awesomeness. CPUs that hum with the power of a thousand suns, crunching numbers faster than a calculator on a caffeine high.
+                
+                RAMs that remember everything, from your first saved game to your latest software installation, never missing a beat. Hard drives that are the ultimate keepers of secrets, holding onto your data like a dragon hoarding its gold.
+                
+                And let’s not forget the unsung heroes, the cables. USB, HDMI, Ethernet, always there, always connecting, the silent lifelines that keep the digital show on the road.
+                
+                So come on in, explore this cornucopia of computer equipment. Who knows, you might just find that elusive piece of tech that’s been missing from your life!</p>
+            <div class="item-container"></div>
+            <div class="item">
+                <img src="pictures/aliencompchip.jpeg" alt="Image 1" width="150" height="150">
+                <ul>
+                    <p>Alien CPU</p>
+                    <p>$12000</p>
+                </ul>
+            </div>
+            <div class="item">
+                <img src="pictures/flashdriveknife.jpeg" alt="Image 2" width="150" height="150">
+                <ul>
+                    <p>Flash drive Knife</p>
+                    <p>$100</p>
+                </ul>
+            </div>
+            <div class="item">
+                <img src="pictures/gamingtoilet.jpeg" alt="Image 3" width="150" height="150">
+                <ul>
+                    <p>Gaming toilet</p>
+                    <p>$6000</p>
+                </ul>
+                <div class="item">
+                    <img src="pictures/medievalmotherboard.jpeg" alt="Image 4" width="150" height="150">
+                    <ul>
+                        <p>Medieval Motherboard</p>
+                        <p>$10000</p>
+                    </ul>
+                </div>
+            
+        </section>
+        
+
+        <section id="section3">
+            <h2>Stock Gallery</h2>
+            <p id="navInfo">Here is the Stock Gallery</p>
+            <p>You can see what else we have in our Stock, these items include a set of VR5000 Goggles, Dragon RAM, a Computer Watch, Batphoens, Holographic Computer MOnitors and a wooden webcam
+               (Note: we only sell the Holographic Monitor, not that woman, we don't sell slaves here...., not anymore,.. stop calling.)
+            </p>
+            <div class="gallery">
+                <img src="pictures/VR5000.jpeg" alt="Image 5" >
+                
+                <img src="pictures/dragonRAM.jpeg" alt="Image 6">
+                
+                <img src="pictures/watchcomp.jpeg" alt="Image 7">
+
+                <img src="pictures/batphones.jpeg" alt="Image 8">
+
+                <img src="pictures/holographicmonitor.jpeg" alt="Image 9">
+
+                <img src="pictures/webcam.jpeg" alt="Image 10">
+
+            </div>
+            <canvas id="myChart"></canvas> 
+        </section>
+        
+    <footer  style="background-color: rgb(64, 175, 219);"> 
+        <p>Always Happy to Help</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        
+        document.getElementById('themeButton').addEventListener('click', function() {
+            var theme1 = document.getElementById('theme1');
+            var theme2 = document.getElementById('theme2');
+            if (theme1.disabled) {
+                theme1.disabled = false;
+                theme2.disabled = true;
+            } else {
+                theme1.disabled = true;
+                theme2.disabled = false;
+            }
+        });
+        function search() {
+            var query = document.getElementById('searchBar').value;
+            alert("Searching for: " + query);
+        }
+    </script>
+</body>
+</html>
+
